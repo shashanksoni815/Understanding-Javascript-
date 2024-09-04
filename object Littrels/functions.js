@@ -39,7 +39,7 @@ function concat(str) {
     let result;
 
     for (let i = 0; i < str.length; i++) {
-        result += str[i];       
+        result += str[i];        
     }
     console.log(result);
 }
@@ -78,6 +78,6 @@ function oddEvenTest(request) {
             console.log(n%2 == 0);
         }
     } else {
-        console.log("wring request");
+         console.log("wring request");
     }
 }
