@@ -25,3 +25,16 @@ let double = arr.map((el) => {
 //filter Method
 
 let even = arr.filter((arr) => (arr%2 == 0));
+
+// Destructuring (Objects)
+
+const student = {
+    name: "karan",
+    age: 14,
+    class: 9,
+    subjects: ["hindi", "english", "maths", "evs"],
+    username: "karan@123",
+    password: "abcd",
+};
+
+let {user, password } = student;
