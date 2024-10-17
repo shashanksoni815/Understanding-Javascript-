@@ -23,6 +23,7 @@ console.log(a * b);
 console.log(a / b);
 console.log(a % b);
 console.log(a ** b);
+console.log(a == b);
 
 // Unery Operaters
 console.log(a++); //10
