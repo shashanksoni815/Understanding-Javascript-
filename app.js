@@ -1,5 +1,6 @@
 console.log("Hello World");
 console.log("Shashank Soni");
+console.log("");
 
 let a = 10;
 let b = 5;
