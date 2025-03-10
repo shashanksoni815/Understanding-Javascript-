@@ -1,27 +1,38 @@
 let a = document.getElementById("num-A");
-let operator = document.querySelector(".operat");
-let b = document.querySelector("#num-B");
+let operator = document.getElementById("operator");
+let b = document.getElementById("num-B");
 let sub = document.querySelector("button");
-let num = a.value;
-// sub.addEventListener("click", function() {
-// switch (operator.ariaValueText) {
-//     case "+" : console.log(a + b);
-//         break;
-//     case "-" : console.log(a - b);
-//         break;
-//     case "*" : console.log(a * b);
-//         break;
-//     case "/" : console.log(a / b);
-//         break;
-//     case "%" : console.log(a % b);
-//         break;
-//     default: console.log("err");
-//         break;
-//     }
-//     console.log(num);
-// })
 
-console.log(a.value)
+sub.addEventListener("click", function() {
+    console.log(a.value)
+    console.log(b.value)
+    console.log(operator.value)
+    let h3 = document.querySelector("h3");
+
+    switch (operator.value) {
+        case "+" : 
+        h3.innerText = (Number(a.value) + Number(b.value));
+             break;
+        case "-" : 
+        h3.innerText = (a.value - b.value);
+            break;
+        case "*" : 
+        h3.innerText = (a.value * b.value);
+            break;
+        case "/" : 
+        h3.innerText = (a.value / b.value);
+            break;
+        case "%" : 
+        h3.innerText = (a.value % b.value)
+            break;
+    
+        default: 
+        h3.innerText = ("err");
+            break;
+    }
+    
+})
+
 
 
 
