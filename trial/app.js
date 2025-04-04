@@ -6,9 +6,12 @@ let $asd = "soni";
 let a = 8;
 
 a = ++a;
-console.log(a);
-a = a++;
-console.log(a);
-a = a++;
 
-console.log(a);
+const car = {}
+
+car.name = "volvo"
+car.model = "latest"
+car.year = 2025
+car.price = "Rs.80,00,000"
+
+console.log(car);
