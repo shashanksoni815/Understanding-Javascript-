@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Gilroy';
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cornflowerblue;
+}
+
+.container {
+    border-radius: 15px;
+    height: 500px;
+    width: 350px;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+}
+
+.container i {
+    color: #fff;
+    font-size: 75px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0.8;
+    transition: all ease 0.4s;
+}
