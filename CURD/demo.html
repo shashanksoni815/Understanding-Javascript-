@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do List (CRUD)</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    li { margin: 5px 0; }
+    button { margin-left: 5px; }
+    input[type="text"] { margin-right: 10px; }
+  </style>
+</head>
+<body>
+
+  <h2>To-Do List</h2>
+  <input type="text" id="todo-input" placeholder="Enter task" />
+  <button onclick="addTodo()">Add</button>
+
+  <ul id="todo-list"></ul>
+
+  <script>
+    function addTodo() {
+      const input = document.getElementById("todo-input");
+      const text = input.value.trim();
+      if (text === "") return;
+
+      const li = document.createElement("li");
+      const span = document.createElement("span");
+      span.textContent = text;
+
+      const editBtn = document.createElement("button");
+      editBtn.textContent = "Edit";
+      editBtn.onclick = () => editTodo(span);
+
+      const deleteBtn = document.createElement("button");
+      deleteBtn.textContent = "Delete";
+      deleteBtn.onclick = () => li.remove();
+
+      li.appendChild(span);
+      li.appendChild(editBtn);
+      li.appendChild(deleteBtn);
+
+      document.getElementById("todo-list").appendChild(li);
+      input.value = "";
+    }
+
+
+    function editTodo(span) {
+      const newText = prompt("Edit your task:", span.textContent);
+      if (newText !== null && newText.trim() !== "") {
+        span.textContent = newText.trim();
+      } else {
+        alert("NO Change")
+      }
+    }
+  </script>
+
+</body>
+</html>
