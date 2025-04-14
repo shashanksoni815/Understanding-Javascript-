@@ -14,4 +14,8 @@ car.model = "latest"
 car.year = 2025
 car.price = "Rs.80,00,000"
 
-console.log(car);
+// console.log(car);
+
+let num1 = 111222222333333334;
+let num2 = 111222222333333333;
+console.log(num1 === num2)
