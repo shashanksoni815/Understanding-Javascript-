@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+
+        <div class="signup-page" id="signup">
+            
+            <form class="signup" id="sign-up-form">
+                <h2>Signup your account</h2>
+                <label for="user">Username</label>
+                <input type="text" id="user" required placeholder="Enter your Username"> 
+                <label for="mail">Email</label>
+                <input type="email" id="mail" required placeholder="Enter your Email"> 
+                <label for="password">Password</label>
+                <input type="text" id="password" required placeholder="Enter your Password"> 
+                <label for="confirm-pass">Confirm Password</label>
+                <input type="text" id="confirm-pass" required placeholder="Enter Confirm Password" >
+                <p>Already have an account <a>Login</a></p>
+                <button  id="signup-btn">Signup</button>
+            </form>
+        </div>
+        <div class="signup-page" id="login">
+            
+            <form action="" class="signup">
+                <h2>Login your account</h2>
+                <!-- <label for="user">Username</label>
+                <input type="text" id="user" placeholder="Enter your Username">  -->
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your Email"> 
+                <label for="pass">Password</label>
+                <input type="text" id="pass" placeholder="Enter your Password"> 
+                <p>Create an account <a>Signup</a></p>
+                <!-- <label for="confirm-pass">Confirm Password</label>
+                <input type="text" id="confirm-pass" placeholder="Enter Confirm Password" > -->
+                <button type="submit" id="login-btn">Login</button>
+            </form>
+        </div>
+        <div id="home" class="home">
+            <h1>Home Page</h1>
+            <button id="log-out" >Log Out</button>
+        </div>
+    </div>
+
+
+
+    <script src="from.js"></script>
+</body>
+</html>
