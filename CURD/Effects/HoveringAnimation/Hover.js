@@ -3,10 +3,15 @@ let elem = document.querySelectorAll("#elem")
 elem.forEach((e) => {
     console.log(e.childNodes[3])
     e.addEventListener("mouseenter", () => {
-        // e.childNodes[3].style.opacity = 1;
+        
+        e.childNodes[3].style.opacity = 1;
     })
     e.addEventListener("mouseleave", () => {
-        // e.childNodes[3].style.opacity = 0;
+        e.childNodes[3].style.opacity = 0;
+    })
+    e.addEventListener("moucemove", () => {
+        e.childNodes[3].style.left = e.x+"px";
+        e.childNodes[3].style.top = e.y+"px";
     })
 })
 
