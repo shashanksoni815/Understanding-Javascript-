@@ -1,0 +1,106 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  /* App Container */
+  .app {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+    width: 350px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: #00f0ff;
+    text-shadow: 0 0 5px #00f0ff;
+  }
+  
+  /* Input Section */
+  .input-section {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .input-section input {
+    flex: 1;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+    background-color: #f0f0f0;
+  }
+  
+  .input-section button {
+    background-color: #00f0ff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .input-section button:hover {
+    background-color: #00bcd4;
+  }
+  
+  /* Task List */
+  ul {
+    list-style: none;
+  }
+  
+  li {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.6rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+  }
+  
+  li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  li button {
+    margin-left: 0.5rem;
+    padding: 0.3rem 0.6rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+  }
+  
+  li button:nth-child(2) {
+    background-color: #ffc107;
+    color: #000;
+  }
+  
+  li button:nth-child(3) {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
