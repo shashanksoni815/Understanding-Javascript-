@@ -65,7 +65,7 @@ function delTask(id) {
     let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
     tasks = tasks.filter(task => task.id !== id);
     localStorage.setItem("tasks", JSON.stringify(tasks));
-    // displayTasks();
+    displayTasks();
   }
 
 
