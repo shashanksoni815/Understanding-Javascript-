@@ -1,29 +1,35 @@
-console.log("Hello World");
-console.log("Shashank Soni");
-console.log("Understanding JavaScript");
+// console.log("Hello World");
+// console.log("Shashank Soni");
+// console.log("Understanding JavaScript");
 
-let a = 10;
-let b = 5;
-console.log("Sum is =", a+b);
-
-// Tamplate Literals ${}
-let pencilPrice = 10;
-let ereaserPrice = 5;
-console.log("The total price is :", pencilPrice+ereaserPrice, "Rs.");
-
-// `` Back Ticks
-console.log(`The total price is : ${pencilPrice+ereaserPrice} Rs.`)
-
-// Arithmetic Operaters
 // let a = 10;
 // let b = 5;
-console.log(a + b);
-console.log(a - b);
-console.log(a * b);
-console.log(a / b);
-console.log(a % b);
-console.log(a ** b);
+// console.log("Sum is =", a+b);
 
-// Unery Operaters
-console.log(a++); //10
-console.log(++a); //12
+// // Tamplate Literals ${}
+// let pencilPrice = 10;
+// let ereaserPrice = 5;
+// console.log("The total price is :", pencilPrice+ereaserPrice, "Rs.");
+
+// // `` Back Ticks
+// console.log(`The total price is : ${pencilPrice+ereaserPrice} Rs.`)
+
+// // Arithmetic Operaters
+// // let a = 10;
+// // let b = 5;
+// console.log(a + b);
+// console.log(a - b);
+// console.log(a * b);
+// console.log(a / b);
+// console.log(a % b);
+// console.log(a ** b);
+
+// // Unery Operaters
+// console.log(a++); //10
+// console.log(++a); //12
+
+
+let a = 258963258852398528526;
+let b = 258963258852398528527;
+
+console.log(a===b);
